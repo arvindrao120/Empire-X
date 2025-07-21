@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+
+
+.header {
+  /* gradient background */
+  background: linear-gradient(135deg, #000000, #3a0404);
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px; /* adjust grid spacing */
+  pointer-events: none; 
+}
+
+.animated-underline {
+  position: relative;
+}
+
+.animated-underline::before {
+  
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px; /* same as border-b-4 */
+  width: 100%;
+  background-color: #BC7C72;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.animated-underline:hover::before {
+  transform: scaleX(1);
+}
+
+.grad {
+  background: -webkit-linear-gradient(45deg, #d4bcac, #971a1a 80%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+     .button-wrapper::before {
+        animation: spin-gradient 4s linear infinite;
+    }
+
+    @keyframes spin-gradient {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+
