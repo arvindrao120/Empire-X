@@ -98,7 +98,7 @@ function Testimonials({ showBtn }) {
       aria-label="Student Testimonials Section"
     >
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-white">What Our Clients Say</h2>
+        <h2 className="text-3xl md:text-4xl font-medium text-white">What Our Clients Say</h2>
         <p className="text-red-300 text-sm mt-2 max-w-xl mx-auto">
           Hear directly from our students who experienced real results through
           our expert-led performance marketing training.

@@ -132,7 +132,7 @@ const Footer = () => {
                   label: "LinkedIn",
                 },
                 {
-                  href: "#",
+                  href: "https://www.youtube.com/@Himanshuyadavpm/featured",
                   icon: <Youtube className="w-6 h-6" />,
                   label: "YouTube",
                 },

@@ -11,7 +11,7 @@ function TestimonialsPage() {
   
   return (
     <>
-      <div className="bg-gradient-to-br from-black to-red-950 flex flex-col items-center pt-16  px-4 perspective-[1000px]">
+      <div className="bg-gradient-to-br from-black to-red-950 flex flex-col items-center   px-4 perspective-[1000px]">
         <Testimonials showBtn={true} />
         <LatestCreations />
         <ShortsGallery />
