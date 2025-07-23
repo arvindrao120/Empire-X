@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import { Star } from "lucide-react";
+import ShowMoreBtn from "./ShowMoreBtn";
 
 const TestimonialCard = ({ name, role, image, rating, desc, title }) => {
   const [visible, setVisible] = useState(false);
@@ -35,10 +36,14 @@ const TestimonialCard = ({ name, role, image, rating, desc, title }) => {
             className="w-20 h-20 rounded-full shadow-md mb-4 border-2 border-red-600"
             loading="lazy"
           />
-          <figcaption className="text-xl font-semibold text-white">{name}</figcaption>
+          <figcaption className="text-xl font-semibold text-white">
+            {name}
+          </figcaption>
         </figure>
         <p className="text-sm text-red-400">{role}</p>
-        <h3 className="text-lg font-medium text-red-500 my-3 italic">“{title}”</h3>
+        <h3 className="text-lg font-medium text-red-500 my-3 italic">
+          “{title}”
+        </h3>
         <p className="text-sm text-gray-300 mb-4 px-2">{desc}</p>
         <div className="flex space-x-1 text-yellow-400">
           {Array.from({ length: rating }).map((_, i) => (
@@ -56,7 +61,9 @@ const TestimonialCard = ({ name, role, image, rating, desc, title }) => {
   );
 };
 
-function Testimonials() {
+function Testimonials({ showBtn }) {
+  console.log(showBtn);
+
   const testimonials = [
     {
       name: "Rohit",
@@ -93,8 +100,8 @@ function Testimonials() {
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold text-white">What Our Clients Say</h2>
         <p className="text-red-300 text-sm mt-2 max-w-xl mx-auto">
-          Hear directly from our students who experienced real results through our expert-led
-          performance marketing training.
+          Hear directly from our students who experienced real results through
+          our expert-led performance marketing training.
         </p>
       </div>
 
@@ -103,6 +110,8 @@ function Testimonials() {
           <TestimonialCard key={index} {...t} />
         ))}
       </div>
+
+      {showBtn === true ? ("")  : <ShowMoreBtn />}
     </section>
   );
 }

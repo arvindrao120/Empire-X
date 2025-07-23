@@ -108,11 +108,11 @@ function Header() {
         >
           <div className="w-full max-w-xl aspect-video rounded-xl shadow-lg hover:scale-[1.02] transition-all duration-300 shadow-red-500/40 border border-red-500/20">
             <iframe
-              className="w-full h-full rounded-xl"
-              src="https://www.youtube.com/embed/IltsOcCj1Ak?si=_or4K8vKYU-9Qv2z"
+             className="w-full h-full rounded-xl"
+              src="https://www.youtube.com/embed/_fzUpcpEWjA?si=wF-4BzmUderErtaY"
               title="YouTube video player"
               frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             ></iframe>
