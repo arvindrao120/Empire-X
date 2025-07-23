@@ -118,7 +118,7 @@ const Faq = () => {
       <div className="max-w-4xl mx-auto text-center mb-12">
         <h2
           id="faq-heading"
-          className="text-3xl md:text-4xl font-bold text-red-500 mb-3"
+          className="text-3xl md:text-4xl font-medium text-red-500 mb-3"
         >
           Performance Marketing FAQs
         </h2>

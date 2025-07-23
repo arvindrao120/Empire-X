@@ -61,7 +61,7 @@ function ContactForm() {
         </p>
         <h1
           id="contact-heading"
-          className="text-4xl font-bold py-4 text-center animate-fade-in"
+          className="text-3xl md:text-4xl  font-medium py-4 text-center animate-fade-in"
         >
           Let’s Get In Touch.
         </h1>

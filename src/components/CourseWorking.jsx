@@ -51,7 +51,7 @@ const TiltCard = ({ children }) => {
   return (
      <section className="bg-[#0d0d0d] py-16 px-4">
         <div>
-            <h1 className="text-red-500 text-center text-4xl font-semibold pb-16">How It Works</h1>
+            <h1 className="text-red-500 text-center text-3xl md:text-4xl  font-medium pb-16">How It Works</h1>
         </div>
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {steps.map((step, index) => (

@@ -57,7 +57,7 @@ const AwardsSection = () => {
         <div className="relative z-10 max-w-6xl mx-auto text-center">
           <h2
             id="awards-heading"
-            className="text-3xl md:text-4xl font-semibold text-red-500 mb-4"
+            className="text-3xl md:text-4xl font-medium text-red-500 mb-4"
           >
             Oh BTW, We Run an Agency Too
           </h2>
